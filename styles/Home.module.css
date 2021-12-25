@@ -1,4 +1,81 @@
-.pages {
+/* Top Nav bar*/
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 6rem;
+  background: greenyellow;
+  font-size: 4rem;
+}
+
+.topNav div {
+  margin: 0.5rem;
+}
+
+/* Side Nav bar*/
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 10%;
+  left: 0;
+  top: 50%;
+  background: rgb(255, 46, 150);
+}
+
+.sideNav div {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem;
+  background: rgb(52, 8, 85);
+  border-radius: 1.5rem;
+}
+
+/* Dropdown menu*/
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+}
+
+.bar1, .bar2, .bar3 {
+  background: black;
+  height: 3px;
+  margin: 0.4rem 0;
+  transition: 0.5s;
+}
+
+.bar1, .bar3 {
+  width: 65%;
+}
+
+.bar2 {
+  width: 90%;
+}
+
+/* Toggle dropdown animation */
+
+.change .bar1 {
+  width: 40%;
+}
+
+.change .bar2 {
+  width: 65%;
+}
+
+.change .bar3 {
+  width: 90%;
+}
+
+/* Container styles */
+
+.container {
   display: flex;
   flex-direction: column;
 	height: 100vh;
@@ -12,12 +89,12 @@
   align-items: center;
   scroll-snap-align: center;
   min-height: 100vh;
-  background-color: #092327;
-  color: rgb(234, 245, 173);
+  background-color: #5d90ff;
+  color: rgb(0, 0, 0);
 }
 
 .pages section:nth-child(2n) {
-  background-color: #051622;
+  background-color: #fff897;
 }
 
 .footer {

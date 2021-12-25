@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import TopNav from './components/topNav'
+import SideNav from './components/sideNav'
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
         <meta name="description" content="A multifaceted full stack Software Engineer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <TopNav />
+      <SideNav />
 
       <div className={styles.pages}>
         <section><h1>Section 1</h1></section>
