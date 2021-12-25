@@ -1,34 +1,19 @@
-.container {
-  display: flex;
-  background-color: rgb(245, 107, 130);
-  min-width: 100vw;
-  flex-direction: column;
-}
-
-/* Hide scroll bars for Chrome/Safari/Opera */
-.pages::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scroll bars for IE/Edge/Firefox */
-.pages {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .pages {
   display: flex;
-  width: 100%;
   flex-direction: column;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
 }
 
 .pages section {
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: center;
   min-height: 100vh;
   background-color: #092327;
-  color: rgb(254, 255, 248);
+  color: rgb(234, 245, 173);
 }
 
 .pages section:nth-child(2n) {
@@ -39,11 +24,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
