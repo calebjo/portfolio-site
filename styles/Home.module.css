@@ -15,13 +15,12 @@
 }
 
 /* Side Nav bar*/
-
 .sideNav {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: sticky;
-  width: 10%;
-  left: 0;
+  width: 2rem;
+  right: 0;
   top: 50%;
   background: rgb(255, 46, 150);
 }
@@ -59,22 +58,22 @@
   width: 90%;
 }
 
-/* Toggle dropdown animation */
-
-.change .bar1 {
+/* Hover dropdown animation */
+.hovered .bar1 {
   width: 40%;
 }
 
-.change .bar2 {
+.hovered .bar2 {
   width: 65%;
 }
 
-.change .bar3 {
+.hovered .bar3 {
   width: 90%;
 }
 
-/* Container styles */
+/* Toggle dropdown menu */
 
+/* Overall content */
 .container {
   display: flex;
   flex-direction: column;
@@ -87,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   min-height: 100vh;
   background-color: #5d90ff;
   color: rgb(0, 0, 0);
@@ -101,4 +100,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+  /* Show side nav on larger screens */
+  .sideNav {
+    display: flex;
+  }
 }
