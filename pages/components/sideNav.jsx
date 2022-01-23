@@ -14,7 +14,7 @@ export default function SideNav() {
     }
 
     return(
-        <div className={styles.sideNav} onClick={clickSideNav}>
+        <div className={styles.sidenav} onClick={clickSideNav}>
             <div></div>
             <div></div>
             <div></div>

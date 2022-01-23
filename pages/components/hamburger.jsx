@@ -5,11 +5,12 @@ export default class Hamburger extends React.Component {
     constructor(props){
         super(props)
         this.state = { toggled: false }
+        this.toggleDropdown = this.toggleDropdown.bind(this)
     }
 
     toggleDropdown(event){
         console.log("In toggleDropdown()")
-        event.currentTarget.classList.toggle(styles.toggled)
+        event.currentTarget.classList.toggle("toggled")
         this.state.toggled = true
     }
     

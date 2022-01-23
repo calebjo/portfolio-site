@@ -4,9 +4,12 @@ import Hamburger from './hamburger'
 
 export default function TopNav() {
     return(
-        <div className={styles.topNav}>
-            <div className={styles.topLogo}>
-                CJ
+        <div className={styles.topnav}>
+            <div className={styles.topnav__links}>
+                <p>Home</p>
+                <p>Skills</p>
+                <p>Projects</p>
+                <p>Contact</p>
             </div>
             <Hamburger />
         </div>

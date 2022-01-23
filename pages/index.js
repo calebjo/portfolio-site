@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import banner from '../assets/images/banner.jpg'
 import styles from '../styles/Home.module.css'
 import TopNav from './components/topNav'
 import SideNav from './components/sideNav'
