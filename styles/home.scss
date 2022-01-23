@@ -1,3 +1,98 @@
-.hi {
-    background: white;
+.home__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+.home__main-panel {
+    width: 85%;
+    height: 85%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 18px rgba(46, 54, 68, 0.15);
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+.home__upper {
+    display: flex;
+    justify-content: center;
+}
+
+.home__profile {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .home__profile-intro {
+        width: 100%;
+        font-size: 2.5rem;
+        span {
+            font-family: 'Source Serif Pro', serif;
+            font-weight: 700;
+            font-size: 5rem;
+        }
+    }
+    .home__profile-image {
+        width: 80%;
+        border-radius: 3rem;
+        border-right: 10px solid pink;
+        border-bottom: 10px solid pink;
+        img {
+            width: 100%;
+            border-radius: 2rem;
+            border-right: 10px solid pink;
+        }
+    }
+}
+
+.home__blurbs {
+    .home__upper-blurb {
+        font-size: 2.5rem;
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        span {
+            font-family: 'Source Serif Pro', serif;
+            font-weight: 700;
+            font-size: 4rem;
+        }
+    }
+    .home__lower-blurb {
+        font-size: 2.5rem;
+        span {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            background: rgb(247, 198, 206);
+        }
+        border-bottom: 1px solid black;
+    }
+}
+
+.home__lower {
+    display: flex;
+    justify-content: center;
+}
+
+.home__profile, .home__blurbs {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+@media (min-width: 600px) {
+    .home__main-panel {
+        width: 80%;
+        height: 80%;
+    }
+
+    .home__container {
+        align-items: flex-start;
+    }
 }

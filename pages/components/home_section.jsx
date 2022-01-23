@@ -7,7 +7,7 @@ export default class HomeSection extends React.Component {
     constructor(props) {
         super(props)
     }
-    
+
     render() {
         return(
             <div className="home__container">
@@ -17,9 +17,12 @@ export default class HomeSection extends React.Component {
                             <div className="home__profile-intro">
                                 <p>Hi! I'm <br /><span>Caleb Jones.</span></p>
                             </div>
-                            <Image
-                                src={profile}
-                            />
+                            <div className="home__profile-image">
+                                <Image
+                                    src={profile}
+                                    objectFit="contain"
+                                />
+                            </div>
                         </div>
                         <div className="home__blurbs">
                             <div className="home__upper-blurb">
