@@ -6,7 +6,11 @@
     height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
+
 .home__main-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 85%;
     height: 85%;
     background: rgba(255, 255, 255, 0.25);
@@ -26,7 +30,7 @@
 .home__profile {
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     .home__profile-intro {
         width: 100%;
         font-size: 2.5rem;
@@ -39,24 +43,22 @@
     .home__profile-image {
         width: 80%;
         border-radius: 3rem;
-        border-right: 10px solid pink;
-        border-bottom: 10px solid pink;
+        border-right: 10px solid #ffa24f;
+        border-bottom: 10px solid #ffa24f;
         img {
             width: 100%;
             border-radius: 2rem;
-            border-right: 10px solid pink;
+            border-right: 10px solid #ffa24f;
         }
     }
 }
 
 .home__blurbs {
     .home__upper-blurb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 2.5rem;
-        p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
@@ -64,27 +66,73 @@
         }
     }
     .home__lower-blurb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 2.5rem;
         span {
             font-family: 'Raleway', sans-serif;
             font-weight: 900;
-            font-size: 2.5rem;
-            background: rgb(247, 198, 206);
+            background: #ffa24f;
         }
-        border-bottom: 1px solid black;
+    }
+    .home__upper-blurb::after,
+    .home__lower-blurb::after {
+        display: flex;
+        position: relative;
+        content: '';
+        background: #111;
+        width: 8rem;
+        height: 2px;
     }
 }
 
 .home__lower {
     display: flex;
     justify-content: center;
+    margin: 7.5rem;
+    font-size: 2rem;
 }
 
 .home__profile, .home__blurbs {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 40%;
 }
+
+.home__profile {
+    max-width: 30rem;
+}
+
+.home__blurbs {
+    max-width: 45rem;
+}
+
+.guide__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    width: 6rem;
+    height: 100%;
+    bottom: -70%;
+    .guide__ball {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 6rem;
+        background: #ffa24f;
+    }
+    .guide__line {
+        width: 4px;
+        height: 100%;
+        background: #ffa24f;
+    }
+}
+
+// MEDIA QUERIES --------------------
 
 @media (min-width: 600px) {
     .home__main-panel {

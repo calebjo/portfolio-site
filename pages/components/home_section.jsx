@@ -11,6 +11,10 @@ export default class HomeSection extends React.Component {
     render() {
         return(
             <div className="home__container">
+                <div className="guide__container">
+                    <div className="guide__ball" />
+                    <div className="guide__line" />
+                </div>
                 <div className="home__main-panel">
                     <div className="home__upper">
                         <div className="home__profile">
