@@ -3,15 +3,19 @@
 }
 
 .fade-out {
-    animation: 2s fade ease-out;
+    animation: 4s fade ease-out;
 }
 
 @keyframes fade {
-    from {
+    0% {
         filter: opacity(1);
     }
 
-    to {
+    50% {
+        filter: opacity(1);
+    }
+
+    100% {
         filter: opacity(0);
     }
 }
@@ -47,6 +51,20 @@
     font-size: 6rem;
     letter-spacing: 12px;
     color: #ffa24f;
+}
+
+.loader__image {
+    animation: 1.5s clip ease-in-out;
+}
+
+@keyframes clip {
+    from {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    to {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
 }
 
 /* PAGE STYLING ------------------------- */

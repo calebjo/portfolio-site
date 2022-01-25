@@ -22,7 +22,7 @@ export const Home = () => {
         setLoaded(`${styles.page__loader} ${styles["fade-out"]}`);
         setTimeout(() => {
             setLoaded(`${styles.page__loader} ${styles.hidden}`);
-        }, 2000)
+        }, 4000)
     }, []);
 
     return (
@@ -44,6 +44,7 @@ export const Home = () => {
                         <div className={styles.loader__icon}>
                             <Image
                                 src={loader}
+                                className={styles.loader__image}
                             />
                         </div>
                     </div>
