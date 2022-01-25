@@ -61,7 +61,7 @@ export default class SkillsSection extends React.Component {
                                 <p>Technologies/Tools</p>
                             </div>
                         </div>
-                        <div className="skills_line-box">
+                        <div className="skills__line-box">
 
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default class SkillsSection extends React.Component {
                                 <p>Methodologies/Processes</p>
                             </div>
                         </div>
-                        <div className="skills_line-box">
+                        <div className="skills__line-box">
                             
                         </div>
                     </div>
