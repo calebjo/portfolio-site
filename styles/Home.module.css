@@ -1,3 +1,21 @@
+.hidden {
+    display: none;
+}
+
+.fade-out {
+    animation: 2s fade ease-out;
+}
+
+@keyframes fade {
+    from {
+        filter: opacity(1);
+    }
+
+    to {
+        filter: opacity(0);
+    }
+}
+
 .page__loader {
     position: fixed;
     left: 0;
