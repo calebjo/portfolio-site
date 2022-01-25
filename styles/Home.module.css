@@ -1,3 +1,37 @@
+.page__loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(37, 36, 36);
+}
+
+.loader__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 12rem;
+    height: 12rem;
+    margin-left: -6rem;
+    margin-top: -6rem;
+}
+
+.loader__header {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: 12px;
+    color: #ffa24f;
+}
+
+/* PAGE STYLING ------------------------- */
 
 .page__wrapper {
     position: relative;

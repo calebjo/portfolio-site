@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import banner from '../assets/images/banner.jpg'
 import styles from '../styles/Home.module.css'
+
+import banner from '../assets/images/banner.jpg'
+import loader from '../assets/images/branch-logo.svg'
 
 import TopNav from './components/topNav'
 import SideNav from './components/sideNav'
@@ -23,6 +25,18 @@ export default function Home() {
             <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet" />
         </Head>
         <div className={styles.page__wrapper}>
+            <div className={styles.page__loader}>
+                <div className={styles.loader__center}>
+                    <div className={styles.loader__header}>
+                        CJ
+                    </div>
+                    <div className={styles.loader__icon}>
+                        <Image
+                            src={loader}
+                        />
+                    </div>
+                </div>
+            </div>
             <div className={styles.banner}>
                 <Image
                     src={banner}

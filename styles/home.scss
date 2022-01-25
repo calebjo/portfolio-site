@@ -8,6 +8,7 @@
 }
 
 .home__main-panel {
+    pointer-events: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
