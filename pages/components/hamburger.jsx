@@ -11,7 +11,9 @@ export default class Hamburger extends React.Component {
     toggleDropdown(event){
         console.log("In toggleDropdown()")
         event.currentTarget.classList.toggle("toggled")
-        this.state.toggled = true
+        this.setState({
+            toggled: true
+        })
     }
     
     hoverDropdown(event){
