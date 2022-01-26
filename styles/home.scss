@@ -11,8 +11,8 @@
     pointer-events: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 85%;
+    justify-content: space-around;
+    width: 90%;
     height: 85%;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(6px);
@@ -25,55 +25,65 @@
 
 .home__upper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .home__profile {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     .home__profile-intro {
         width: 100%;
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 2.5vw, 3rem); 
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
-            font-size: 5rem;
+            font-size: clamp(4rem, 5vw, 6rem); 
         }
     }
     .home__profile-image {
-        width: 80%;
-        border-radius: 3rem;
-        border-right: 10px solid #ffa24f;
-        border-bottom: 10px solid #ffa24f;
+        width: 60%;
+        max-width: 20rem;
         img {
-            width: 100%;
             border-radius: 2rem;
-            border-right: 10px solid #ffa24f;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            background: #ffa24f;
+            top: 2rem;
         }
     }
 }
 
 .home__blurbs {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    .home__upper-blurb,
+    .home__lower-blurb {
+        margin: 1rem 0;
+    }
+
     .home__upper-blurb {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 2.5vw, 4rem); 
         width: 100%;
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
-            font-size: 4rem;
+            font-size: clamp(3rem, 4vw, 5rem); 
         }
     }
     .home__lower-blurb {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 2.5vw, 4rem); 
         width: 100%;
         span {
             font-family: 'Raleway', sans-serif;
@@ -87,31 +97,17 @@
         position: relative;
         content: '';
         background: #111;
-        width: 8rem;
+        width: 4rem;
         height: 2px;
+        margin: 1.5rem;
     }
 }
 
 .home__lower {
     display: flex;
     justify-content: center;
-    margin: 7.5rem;
-    font-size: 2rem;
-}
-
-.home__profile, .home__blurbs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-}
-
-.home__profile {
-    max-width: 30rem;
-}
-
-.home__blurbs {
-    max-width: 45rem;
+    margin: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 3rem); 
 }
 
 .guide__container {
@@ -123,7 +119,7 @@
     position: absolute;
     width: 6rem;
     height: 4000px;
-    bottom: -3735px;
+    bottom: -3850px;
     .guide__ball {
         width: 6rem;
         height: 6rem;
