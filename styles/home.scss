@@ -11,7 +11,7 @@
     pointer-events: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 85%;
     height: 85%;
     background: rgba(255, 255, 255, 0.25);
@@ -118,8 +118,8 @@
     z-index: 2;
     position: absolute;
     width: 6rem;
-    height: 100%;
-    bottom: -70%;
+    height: 4000px;
+    bottom: -3735px;
     .guide__ball {
         width: 6rem;
         height: 6rem;
