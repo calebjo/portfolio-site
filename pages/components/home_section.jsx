@@ -25,6 +25,7 @@ export default class HomeSection extends React.Component {
                                 <Image
                                     src={profile}
                                     objectFit="contain"
+                                    priority="true"
                                 />
                             </div>
                         </div>
