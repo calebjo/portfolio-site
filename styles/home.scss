@@ -8,10 +8,10 @@
 }
 
 .home__main-panel {
+    position: relative;
     pointer-events: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 90%;
     height: 85%;
     background: rgba(255, 255, 255, 0.25);
@@ -37,6 +37,7 @@
     .home__profile-intro {
         width: 100%;
         font-size: clamp(2rem, 2.5vw, 3rem); 
+        padding: 2rem;
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
@@ -73,6 +74,7 @@
         align-items: center;
         font-size: clamp(2rem, 2.5vw, 4rem); 
         width: 100%;
+        text-align: center;
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
@@ -85,6 +87,8 @@
         align-items: center;
         font-size: clamp(2rem, 2.5vw, 4rem); 
         width: 100%;
+        text-align: center;
+        line-height: 135%;
         span {
             font-family: 'Raleway', sans-serif;
             font-weight: 900;
@@ -104,10 +108,13 @@
 }
 
 .home__lower {
+    position: absolute;
+    left: 50%;
+    bottom: 7.5rem;
     display: flex;
     justify-content: center;
     margin: 2rem;
-    font-size: clamp(1.5rem, 2.5vw, 3rem); 
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
 }
 
 .guide__container {
