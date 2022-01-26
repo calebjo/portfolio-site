@@ -52,6 +52,7 @@ export const Home = () => {
                             <Image
                                 src={loader}
                                 className={styles.loader__image}
+                                priority="true"
                             />
                         </div>
                     </div>
@@ -65,6 +66,7 @@ export const Home = () => {
                             layout="fill"
                             objectFit='cover'
                             objectPosition={scrollRate}
+                            priority="true"
                         />
                         {/* SKELETON -- FIX BACKGROUND IMAGE POSITIONING LATER */}
                     </div>

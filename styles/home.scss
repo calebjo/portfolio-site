@@ -108,12 +108,10 @@
 }
 
 .home__lower {
-    position: absolute;
-    left: 50%;
-    bottom: 7.5rem;
+    // position: absolute;
     display: flex;
     justify-content: center;
-    margin: 2rem;
+    margin-top: 4rem;
     font-size: clamp(1.5rem, 2.5vw, 2rem); 
 }
 
