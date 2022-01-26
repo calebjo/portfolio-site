@@ -33,7 +33,7 @@ export default class HomeSection extends React.Component {
                                 <p>I am a full stack<br /><span>Software Engineer.</span></p>
                             </div>
                             <div className="home__lower-blurb">
-                                <p>I build great <span>products</span> to create even better <span>experiences.</span></p>
+                                <p>I build great <span>products</span> to create <br />even better <span>experiences.</span></p>
                             </div>
                         </div>
                     </div>

@@ -14,19 +14,26 @@ import ProjectsSection from './components/projects_section'
 import ContactSection from './components/contact_section'
 
 export const Home = () => {
-
-    const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
     
+    const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
+    const [scrollRate, setScrollRate] = useState(`50% -2rem`);
+
     useEffect(() => {
-        document.title = "Page loaded!";
         setLoaded(`${styles.page__loader} ${styles["fade-out"]}`);
         setTimeout(() => {
             setLoaded(`${styles.page__loader} ${styles.hidden}`);
         }, 4000)
+
     }, []);
 
+    const handleScroll = (e) => {
+        const scrolled = e.target.scrollTop
+        const rate = scrolled * 0.125
+        setScrollRate(`50% ${-rate}px`)
+    }
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container}onScroll={handleScroll}>
             <Head>
                 <title>Caleb Jones</title>
                 <meta name="description" content="A multifaceted full stack Software Engineer" />
@@ -50,12 +57,14 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className={styles.pages}>
-                    <div className={styles.banner}>
+                    <div 
+                        className={styles.banner}
+                        style={{scrollRate}}>
                         <Image
                             src={banner}
                             layout="fill"
                             objectFit='cover'
-                            objectPosition='50% -5rem'
+                            objectPosition={scrollRate}
                         />
                         {/* SKELETON -- FIX BACKGROUND IMAGE POSITIONING LATER */}
                     </div>
