@@ -3,6 +3,7 @@
 }
 
 .fade-out {
+    pointer-events: none;
     animation: 4s fade ease-out;
 }
 

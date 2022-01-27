@@ -16,7 +16,7 @@ import ContactSection from './components/contact_section'
 export const Home = () => {
     
     const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
-    const [scrollRate, setScrollRate] = useState(`50% -2rem`);
+    const [scrollRate, setScrollRate] = useState(`50% 0`);
 
     useEffect(() => {
         setLoaded(`${styles.page__loader} ${styles["fade-out"]}`);
