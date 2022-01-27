@@ -88,9 +88,10 @@
     position: absolute;
     top: 0;
     font-size: 4rem;
+    height: 8rem;
 }
 
-.topnav div {
+.topnav > div {
     margin: 0.5rem;
 }
 
@@ -189,11 +190,10 @@
 
 /* Media queries */
 @media (min-width: 600px) {
-    .topnav__links {
-        display: flex;
+    .topnav {
+        position: relative;
     }
-  /* Show side nav on larger screens */
-    .sidenav {
+    .topnav__links {
         display: flex;
     }
 

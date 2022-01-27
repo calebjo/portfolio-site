@@ -34,14 +34,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 55%;
+    padding: 0 1rem;
     .home__profile-intro {
-        width: 100%;
         font-size: clamp(2rem, 2.5vw, 3rem); 
         padding: 1rem;
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
-            font-size: clamp(4rem, 5vw, 6rem); 
+            font-size: clamp(4rem, 5vw, 4.5rem); 
         }
     }
     .home__profile-image {
@@ -50,19 +51,13 @@
         img {
             border-radius: 2rem;
         }
-        &::after {
-            position: absolute;
-            content: '';
-            background: #ffa24f;
-            top: 2rem;
-        }
     }
 }
 
 .home__blurbs {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    max-width: 500px;
     .home__upper-blurb,
     .home__lower-blurb {
         margin: 0.25rem 0;
@@ -72,13 +67,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: clamp(1.75rem, 2.5vw, 4rem); 
+        font-size: clamp(2rem, 2.5vw, 3rem); 
         width: 100%;
         text-align: center;
         span {
             font-family: 'Source Serif Pro', serif;
             font-weight: 700;
-            font-size: clamp(3rem, 4vw, 5rem); 
+            font-size: clamp(4rem, 5vw, 4.5rem); 
         }
     }
     .home__lower-blurb {
@@ -102,7 +97,7 @@
         content: '';
         background: #111;
         width: 4rem;
-        height: 2px;
+        height: 1px;
         margin: 1.5rem;
     }
 }
@@ -142,10 +137,30 @@
 @media (min-width: 600px) {
     .home__main-panel {
         width: 80%;
+        max-width: 1200px;
         height: 80%;
     }
 
     .home__container {
         align-items: flex-start;
     }
+}
+
+@media (min-width: 900px) {
+    .home__main-panel {
+        justify-content: space-around;
+    }
+
+    .home__upper {
+        flex-direction: row;
+        .home__profile {
+            min-width: 300px;
+        }
+    }
+
+    .home__lower-blurb p {
+        width: 75%;
+        text-align: right;
+    }
+    
 }
