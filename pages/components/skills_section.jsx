@@ -17,6 +17,11 @@ import redux from "../../assets/images/redux.png"
 import ruby from "../../assets/images/ruby.png"
 import socket from "../../assets/images/socket.png"
 
+import agile from "../../assets/images/process-agile.png"
+import waterfall from "../../assets/images/process-waterfall.png"
+import tdd from "../../assets/images/process-tdd.png"
+import bem from "../../assets/images/process-bem.png"
+
 export default class SkillsSection extends React.Component {
     constructor(props) {
         super(props)
@@ -117,16 +122,24 @@ export default class SkillsSection extends React.Component {
                         <div className="skills__list processes">
                             <div className="skills__list-grid process-grid">
                                 <div className="skills__list-item">
-                                    
+                                    <Image
+                                        src={agile}
+                                    />
                                 </div>
                                 <div className="skills__list-item">
-                                    
+                                    <Image
+                                        src={waterfall}
+                                    />
                                 </div>
                                 <div className="skills__list-item">
-                                    
+                                    <Image
+                                        src={tdd}
+                                    />
                                 </div>
                                 <div className="skills__list-item">
-                                    
+                                    <Image
+                                        src={bem}
+                                    />
                                 </div>
                             </div>
                             <div className="skills__list-header">
