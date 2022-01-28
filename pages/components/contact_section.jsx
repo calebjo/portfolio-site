@@ -15,9 +15,9 @@ export default class ContactSection extends React.Component {
                         <ContactForm />
                     </div>
                     <div className="contact__form-socials">
-                        <a href="https://www.linkedin.com/in/caleb-jones-928521126/">LinkedIn</a>
-                        <a href="https://github.com/calebjo">GitHub</a>
-                        <a href="https://angel.co/u/caleb-jones-15">AngelList</a>
+                        <a href="https://www.linkedin.com/in/caleb-jones-928521126/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://github.com/calebjo" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://angel.co/u/caleb-jones-15" target="_blank" rel="noreferrer">AngelList</a>
                     </div>
                 </div>
             </div>
