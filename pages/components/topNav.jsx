@@ -3,10 +3,16 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import Hamburger from './hamburger'
 
-export default function TopNav() {
+export default function TopNav(props) {
+
+    const classList = props.pastTop ? (
+        `${styles.topnav} scrolled`
+    ) : (
+        `${styles.topnav}`
+    )
 
     return(
-        <div className={styles.topnav}>
+        <div className={classList}>
             <div className={styles.topnav__links}>
                 <a href="#home">Home</a>
                 <a href="#skills">Skills</a>

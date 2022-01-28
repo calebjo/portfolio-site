@@ -90,6 +90,7 @@
     top: 0;
     font-size: 4rem;
     height: 8rem;
+    transition: 0.2s all ease-out;
 }
 
 .topnav > div {

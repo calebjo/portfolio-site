@@ -39,6 +39,14 @@ export default class HomeSection extends React.Component {
                         </div>
                     </div>
                     <div className="home__lower">
+                        <div className="home__lower-copy">
+                            <div className="home__copy-left">
+                                Multifaceted background in business, management, art, and computer science.
+                            </div>
+                            <div className="home__copy-right">
+                                Deep knowledge of JavaScript, React, Redux, HTML5, CSS3, and more.
+                            </div>
+                        </div>
                         <div className="home__continue">
                             <p>Let's get started.</p>
                         </div>

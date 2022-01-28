@@ -12,7 +12,7 @@
     align-items: center;
     width: 20rem;
     height: 6rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     background: #ffa24f;
     border-left: 8px solid #222;
     border-right: 8px solid #222;
@@ -179,5 +179,7 @@
         left: 10vw;
     }
 
-    
+    .projects__header {
+        margin-top: 8rem;
+    }
 }

@@ -1,3 +1,10 @@
+.scrolled {
+    background: rgb(255, 173, 91);
+    // background: linear-gradient(180deg, rgba(241,161,79,1) 30%, rgba(232,171,82,0) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.2s all ease-out;
+}
+
 .home__container {
     display: flex;
     justify-content: center;
@@ -14,6 +21,7 @@
     flex-direction: column;
     width: 90%;
     height: 85%;
+    min-height: 550px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(6px);
     border: solid 2px transparent;
@@ -104,9 +112,26 @@
 
 .home__lower {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1vw;
-    font-size: clamp(1.5rem, 2.5vw, 2rem); 
+    min-height: 30%;
+    font-size: clamp(2rem, 2.5vw, 3rem); 
+}
+
+.home__lower-copy {
+    display: none;
+    justify-content: center;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.home__lower-copy > div {
+    max-width: 45%;
+    margin: 0 1rem;
+}
+
+.home__continue {
+    margin-top: 1rem;
 }
 
 .guide__container {
@@ -162,5 +187,12 @@
         width: 75%;
         text-align: right;
     }
-    
+
+    .home__lower-copy {
+        display: flex;
+    }
+
+    .home__continue {
+        margin-top: 4rem;
+    }
 }

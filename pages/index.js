@@ -17,6 +17,7 @@ export const Home = () => {
     
     const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
     const [scrollRate, setScrollRate] = useState(`50% 0`);
+    const [pastTop, setPastTop] = useState(false)
 
     useEffect(() => {
         setLoaded(`${styles.page__loader} ${styles["fade-out"]}`);
@@ -30,6 +31,11 @@ export const Home = () => {
         const scrolled = e.target.scrollTop
         const rate = scrolled * 0.125
         setScrollRate(`50% ${-rate}px`)
+        if (scrolled === 0) {
+            setPastTop(false)
+        } else {
+            setPastTop(true)
+        }
     }
 
     return (
@@ -71,7 +77,8 @@ export const Home = () => {
                         />
                         {/* SKELETON -- FIX BACKGROUND IMAGE POSITIONING LATER */}
                     </div>
-                    <TopNav />
+                    <TopNav 
+                        pastTop={pastTop}/>
                     <SideNav />
                     <section className={styles.home}>
                         <HomeSection />
