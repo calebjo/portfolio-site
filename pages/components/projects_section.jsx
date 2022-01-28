@@ -14,8 +14,8 @@ export default class ProjectsSection extends React.Component {
                 <div className="project__wrapper">
                     <div className="project__media">
                         <div className="project__links">
-                            <a href="https://github.com/calebjo/quizard" target="_blank">GitHub</a>
-                            <a href="https://quizard-aa.herokuapp.com/#/" target="_blank">Live</a>
+                            <a href="https://github.com/calebjo/quizard" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://quizard-aa.herokuapp.com/#/" target="_blank" rel="noreferrer">Live</a>
                         </div>
                         <video autoPlay loop 
                             style={{width: '100%', height: '100%'}}
@@ -38,8 +38,8 @@ export default class ProjectsSection extends React.Component {
                 <div className="project__wrapper">
                     <div className="project__media">
                         <div className="project__links">
-                            <a href="https://github.com/calebjo/willow" target="_blank">GitHub</a>
-                            <a href="https://willow-aa.herokuapp.com/#/" target="_blank">Live</a>
+                            <a href="https://github.com/calebjo/willow" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://willow-aa.herokuapp.com/#/" target="_blank" rel="noreferrer">Live</a>
                         </div>
                         <video autoPlay loop 
                             style={{width: '100%', height: '100%'}}
@@ -62,8 +62,8 @@ export default class ProjectsSection extends React.Component {
                 <div className="project__wrapper">
                     <div className="project__media">
                         <div className="project__links">
-                            <a href="https://github.com/calebjo/arcanopoly" target="_blank">GitHub</a>
-                            <a href="https://calebjo.github.io/arcanopoly/" target="_blank">Live</a>
+                            <a href="https://github.com/calebjo/arcanopoly" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://calebjo.github.io/arcanopoly/" target="_blank" rel="noreferrer">Live</a>
                         </div>
                         <video autoPlay loop 
                             style={{width: '100%', height: '100%'}}
