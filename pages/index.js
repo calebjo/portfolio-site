@@ -57,7 +57,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.pages}>
+                <div className={styles.pages} id="home">
                     <div 
                         className={styles.banner}
                         style={{width: '100%', height: '100%'}}
@@ -76,13 +76,15 @@ export const Home = () => {
                     <section className={styles.home}>
                         <HomeSection />
                     </section>
-                    <section className={styles.skills}>
+                    <section className={styles.skills} id="skills">
                         <SkillsSection />
                     </section>
-                    <section className={styles.projects}>
+                    <section className={styles.projects} id="projects">
                         <ProjectsSection />
                     </section>
-                    <ContactSection />
+                    <section id="contact">
+                        <ContactSection />
+                    </section>
                 </div>
             </div>
         </div>
