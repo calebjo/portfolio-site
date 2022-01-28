@@ -188,9 +188,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 8rem);
     color: rgb(0, 0, 0);
 }
+
+/* .pages section:nth-child(2) {
+    background: red;
+} */
 
 .pages section:last-child {
     min-height: 0;

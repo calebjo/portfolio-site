@@ -17,6 +17,25 @@
     padding: 2rem;
 }
 
+.skills__panel::before,
+.skills__panel::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 6rem;
+    background: #FFA24F;
+}
+
+.skills__panel::before {
+    top: -4rem;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+}
+
+.skills__panel::after {
+    bottom: -4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+}
+
 .skills__left, .skills__right {
     display: flex;
     justify-content: center;
@@ -28,7 +47,7 @@
     margin: 2rem;
     padding: 1rem;
     border-radius: 3rem;
-    background: #fefefe;
+    background: white;
     border: 4px solid #FFA24F;
 }
 
@@ -93,17 +112,95 @@
 }
 
 .skills__line-box {
+    z-index: -1;
     position: absolute;
     width: 75%;
     height: 75%;
-    // border: 4px solid rgb(255, 0, 221);
     border-radius: 3rem;
 }
 
-// .skills__left .skills__line-box {
-//     top: 40%;
-// }
+.skills__left .skills__line-box {
+    top: 40%;
+}
 
-// .skills__right .skills__line-box {
-//     top: -20%;
-// }
+.skills__right .skills__line-box {
+    top: -20%;
+}
+
+@media (min-width: 900px) {
+    .skills__left, .skills__right {
+        width: 600px;
+        height: 400px;
+    }
+
+    .tech-grid {
+        .skills__list-item {
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+
+    .process-grid {
+        width: 75%;
+        .skills__list-item {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+
+    .skills__left {
+        right: 15%;
+        top: 1rem;
+    }
+    
+    .skills__right {
+        top: -1rem;
+        left: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills__left, .skills__right {
+        width: 600px;
+        height: 400px;
+    }
+
+    .skills__left {
+        right: 22.5%;
+        top: 1rem;
+    }
+    
+    .skills__right {
+        top: -1rem;
+        left: 22.5%;
+    }
+
+    .skills__left .skills__line-box {
+        left: 300px;
+        // border-left: 4px solid #FFA24F;
+        // border-bottom: 4px solid #FFA24F;
+    }
+
+    .skills__right .skills__line-box {
+        right: 300px;
+        // border-right: 4px solid #FFA24F;
+        // border-top: 4px solid #FFA24F;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .skills__left, .skills__right {
+        height: 450px;
+    }
+    
+    .skills__left {
+        right: 22.5%;
+        top: 12rem;
+    }
+    
+    .skills__right {
+        top: -12rem;
+        left: 22.5%;
+    }
+}
