@@ -1,0 +1,124 @@
+/* Top Nav bar*/
+.top-nav {
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    font-size: 4rem;
+    height: 8rem;
+    transition: 0.2s all ease-out;
+}
+
+.top-nav > div {
+    margin: 0.5rem;
+}
+
+.top-nav__links {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.top-nav__links a {
+    padding: 1% 5%;
+    transition: 0.1s all ease-in-out;
+}
+
+.top-nav__links a:hover {
+    background: rgba(0, 0, 0, 0.075);
+    border-radius: 2rem;
+    transition: 0.1s all ease-in-out;
+}
+
+/* Dropdown menu*/
+.hamburger {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 2rem;
+    width: 6rem;
+    border-radius: 4rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.15s all ease-out;
+}
+
+.top-nav.scrolled .hamburger {
+    background: #ffa24f;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.15s all ease-out;
+}
+
+.bar1, .bar2, .bar3 {
+    background: black;
+    height: 3px;
+    margin: 0.4rem 0;
+    transition: 0.5s;
+}
+
+.bar1, .bar3 {
+    width: 65%;
+}
+
+.bar2 {
+    width: 90%;
+}
+
+.hovered .bar1 {
+    width: 40%;
+}
+
+.hovered .bar2 {
+    width: 65%;
+}
+
+.hovered .bar3 {
+    width: 90%;
+}
+
+/* Toggle dropdown menu */
+
+.dropdown-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}
+
+.nav-dropdown.toggled .dropdown-container {
+    display: flex;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .top-nav {
+        position: sticky;
+    }
+
+    .top-nav__links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .top-nav.scrolled {
+        background: rgb(255, 173, 91);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        transition: 0.2s all ease-out;
+    }
+}

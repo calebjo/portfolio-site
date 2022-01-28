@@ -9,30 +9,37 @@ export default class Hamburger extends React.Component {
     }
 
     toggleDropdown(event){
-        console.log("In toggleDropdown()")
-        event.currentTarget.classList.toggle("toggled")
+        event.currentTarget.parentNode.classList.toggle("toggled")
         this.setState({
             toggled: true
         })
     }
     
     hoverDropdown(event){
-        console.log("In hoverDropdown()")
-        event.currentTarget.classList.toggle(styles.hovered)
+        event.currentTarget.parentNode.classList.toggle("hovered")
     }
 
     render(){
         return (
-            <div 
-                className={styles.hamburger} 
-                onClick={this.toggleDropdown} 
-                onMouseEnter={this.hoverDropdown}
-                onMouseLeave={this.hoverDropdown}
-            >
-                <div className={styles.bar1}></div>
-                <div className={styles.bar2}></div>
-                <div className={styles.bar3}></div>
+            <div className="nav-dropdown">
+                <div 
+                    className="hamburger"
+                    onClick={this.toggleDropdown} 
+                    onMouseEnter={this.hoverDropdown}
+                    onMouseLeave={this.hoverDropdown}
+                >
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
+                <div className="dropdown-container">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
+            
         )
     }
 }

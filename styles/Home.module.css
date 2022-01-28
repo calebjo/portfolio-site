@@ -79,42 +79,6 @@
     height: 100%;
 }
 
-/* Top Nav bar*/
-.topnav {
-    z-index: 100;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    font-size: 4rem;
-    height: 8rem;
-    transition: 0.2s all ease-out;
-}
-
-.topnav > div {
-    margin: 0.5rem;
-}
-
-.topnav__links {
-    display: none;
-    width: 100%;
-    justify-content: center;
-    font-size: 2rem;
-}
-
-.topnav__links a {
-    padding: 1% 5%;
-    transition: 0.1s all ease-in-out;
-}
-
-.topnav__links a:hover {
-    background: rgba(0, 0, 0, 0.075);
-    border-radius: 2rem;
-    transition: 0.1s all ease-in-out;
-}
-
 /* Side Nav bar*/
 .sidenav {
     display: none;
@@ -133,45 +97,6 @@
     background: #111;
     border-radius: 1.5rem;
 }
-
-/* Dropdown menu*/
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-}
-
-.bar1, .bar2, .bar3 {
-    background: black;
-    height: 3px;
-    margin: 0.4rem 0;
-    transition: 0.5s;
-}
-
-.bar1, .bar3 {
-    width: 65%;
-}
-
-.bar2 {
-    width: 90%;
-}
-
-/* Hover dropdown animation */
-.hovered .bar1 {
-    width: 40%;
-}
-
-.hovered .bar2 {
-    width: 65%;
-}
-
-.hovered .bar3 {
-    width: 90%;
-}
-
-/* Toggle dropdown menu */
 
 /* Overall content */
 
@@ -204,18 +129,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Media queries */
-@media (min-width: 600px) {
-    .topnav {
-        position: sticky;
-    }
-    .topnav__links {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
 }

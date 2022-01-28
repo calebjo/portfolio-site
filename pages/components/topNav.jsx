@@ -6,14 +6,14 @@ import Hamburger from './hamburger'
 export default function TopNav(props) {
 
     const classList = props.pastTop ? (
-        `${styles.topnav} scrolled`
+        `top-nav scrolled`
     ) : (
-        `${styles.topnav}`
+        `top-nav`
     )
 
     return(
         <div className={classList}>
-            <div className={styles.topnav__links}>
+            <div className='top-nav__links'>
                 <a href="#home">Home</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
