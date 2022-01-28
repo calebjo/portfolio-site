@@ -127,6 +127,26 @@
     top: -20%;
 }
 
+@media (min-width: 530px) {
+    .skills__panel::before {
+        top: 0;
+    }
+    
+    .skills__panel::after {
+        bottom: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .skills__panel::before {
+        top: 2rem;
+    }
+    
+    .skills__panel::after {
+        bottom: 2rem;
+    }
+}
+
 @media (min-width: 900px) {
     .skills__left, .skills__right {
         width: 600px;
@@ -157,6 +177,14 @@
         top: -1rem;
         left: 15%;
     }
+
+    .skills__panel::before {
+        top: -4rem;
+    }
+    
+    .skills__panel::after {
+        bottom: -4rem;
+    }    
 }
 
 @media (min-width: 1200px) {
