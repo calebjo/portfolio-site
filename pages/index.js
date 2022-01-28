@@ -60,7 +60,8 @@ export const Home = () => {
                 <div className={styles.pages}>
                     <div 
                         className={styles.banner}
-                        style={{scrollRate}}>
+                        style={{width: '100%', height: '100%'}}
+                        >
                         <Image
                             src={banner}
                             layout="fill"
@@ -81,9 +82,7 @@ export const Home = () => {
                     <section className={styles.projects}>
                         <ProjectsSection />
                     </section>
-                    <section className={styles.contact}>
-                        <ContactSection />
-                    </section>
+                    <ContactSection />
                 </div>
             </div>
         </div>

@@ -11,16 +11,8 @@ export default class ContactSection extends React.Component {
                     Get in touch
                 </div>
                 <div className="contact__form">
-                    <div className="contact__form-info">
-                        {/* <div className="contact__name">
-
-                        </div>
-                        <div className="contact__email">
-                            
-                        </div>
-                        <div className="contact__message">
-                            
-                        </div> */}
+                    <div className="contact__form-wrapper">
+                        <ContactForm />
                     </div>
                     <div className="contact__form-socials">
                         <a href="https://www.linkedin.com/in/caleb-jones-928521126/">LinkedIn</a>
@@ -31,4 +23,45 @@ export default class ContactSection extends React.Component {
             </div>
         )
     }
+}
+
+import { useForm, ValidationError } from '@formspree/react';
+function ContactForm() {
+  const [state, handleSubmit] = useForm("mwkylkve");
+  if (state.succeeded) {
+      return <p>Thanks for the message!</p>;
+  }
+  return (
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Your email:
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <label htmlFor="message">
+        Your message:
+      </label>
+      <textarea
+        id="message"
+        name="message"
+        style={{resize: "none"}}
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
 }
