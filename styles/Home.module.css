@@ -103,8 +103,15 @@
     font-size: 2rem;
 }
 
-.topnav__links p {
+.topnav__links a {
     padding: 1% 5%;
+    transition: 0.1s all ease-in-out;
+}
+
+.topnav__links a:hover {
+    background: rgba(0, 0, 0, 0.075);
+    border-radius: 2rem;
+    transition: 0.1s all ease-in-out;
 }
 
 /* Side Nav bar*/
@@ -172,6 +179,7 @@
     flex-direction: column;
 	height: 100vh;
 	overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .pages section {
