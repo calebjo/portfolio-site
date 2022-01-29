@@ -66,7 +66,7 @@ export const Home = () => {
                 <div className={styles.pages} id="home">
                     <div 
                         className={styles.banner}
-                        style={{width: '100%', height: '100%'}}
+                        style={{height: '100%'}}
                         >
                         <Image
                             src={banner}
