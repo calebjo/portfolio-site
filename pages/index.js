@@ -29,6 +29,7 @@ export const Home = () => {
 
     const handleScroll = (e) => {
         const scrolled = e.target.scrollTop
+        console.log(scrolled)
         const rate = scrolled * 0.125
         setScrollRate(`50% ${-rate}px`)
         if (scrolled === 0) {
@@ -39,7 +40,7 @@ export const Home = () => {
     }
 
     return (
-        <div className={styles.container}onScroll={handleScroll}>
+        <div className={styles.container} onScroll={handleScroll}>
             <Head>
                 <title>Caleb Jones</title>
                 <meta name="description" content="A multifaceted full stack Software Engineer" />
