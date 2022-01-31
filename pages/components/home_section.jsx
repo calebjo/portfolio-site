@@ -26,6 +26,7 @@ export default class HomeSection extends React.Component {
                                     src={profile}
                                     objectFit="contain"
                                     priority="true"
+                                    alt="Caleb headshot"
                                 />
                             </div>
                         </div>

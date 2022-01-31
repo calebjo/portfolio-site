@@ -36,76 +36,91 @@ export default class SkillsSection extends React.Component {
                             <div className="skills__list-grid tech-grid">
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={react}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={redux}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={ruby}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={rails}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={psql}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={mongo}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={node}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={aws}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={express}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={html}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={css}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={git}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={github}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={socket}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Tech Icon"
                                         src={maps}
                                     />
                                 </div>
@@ -121,21 +136,25 @@ export default class SkillsSection extends React.Component {
                             <div className="skills__list-grid process-grid">
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Process Icon"
                                         src={agile}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Process Icon"
                                         src={waterfall}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Process Icon"
                                         src={tdd}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
+                                        alt="Process Icon"
                                         src={bem}
                                     />
                                 </div>
