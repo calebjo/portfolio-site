@@ -17,7 +17,7 @@ export default class ProjectsSection extends React.Component {
                             <a href="https://github.com/calebjo/quizard" target="_blank" rel="noreferrer">GitHub</a>
                             <a href="https://quizard-aa.herokuapp.com/#/" target="_blank" rel="noreferrer">Live</a>
                         </div>
-                        <video autoPlay loop 
+                        <video playsInline autoPlay muted loop 
                             style={{width: '100%', height: '100%'}}
                             src={require('../../assets/videos/quizard-demo.mp4')}>
                         </video>
@@ -41,7 +41,7 @@ export default class ProjectsSection extends React.Component {
                             <a href="https://github.com/calebjo/willow" target="_blank" rel="noreferrer">GitHub</a>
                             <a href="https://willow-aa.herokuapp.com/#/" target="_blank" rel="noreferrer">Live</a>
                         </div>
-                        <video autoPlay loop 
+                        <video playsInline autoPlay muted loop 
                             style={{width: '100%', height: '100%'}}
                             src={require('../../assets/videos/willow-demo.mp4')}>
                         </video>
@@ -65,7 +65,7 @@ export default class ProjectsSection extends React.Component {
                             <a href="https://github.com/calebjo/arcanopoly" target="_blank" rel="noreferrer">GitHub</a>
                             <a href="https://calebjo.github.io/arcanopoly/" target="_blank" rel="noreferrer">Live</a>
                         </div>
-                        <video autoPlay loop 
+                        <video playsInline autoPlay muted loop 
                             style={{width: '100%', height: '100%'}}
                             src={require('../../assets/videos/arcanopoly-demo.mp4')}>
                         </video>
