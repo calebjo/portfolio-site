@@ -27,6 +27,7 @@ export default class HomeSection extends React.Component {
                                     objectFit="contain"
                                     priority="true"
                                     alt="Caleb headshot"
+                                    onLoadingComplete={this.props.increaseLoadedImages}
                                 />
                             </div>
                         </div>

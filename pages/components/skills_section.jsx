@@ -38,6 +38,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={react}
                                     />
                                 </div>
@@ -45,6 +46,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={redux}
                                     />
                                 </div>
@@ -52,6 +54,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={ruby}
                                     />
                                 </div>
@@ -59,6 +62,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={rails}
                                     />
                                 </div>
@@ -66,6 +70,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={psql}
                                     />
                                 </div>
@@ -73,6 +78,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={mongo}
                                     />
                                 </div>
@@ -80,6 +86,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={node}
                                     />
                                 </div>
@@ -87,6 +94,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={aws}
                                     />
                                 </div>
@@ -94,6 +102,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={express}
                                     />
                                 </div>
@@ -101,6 +110,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={html}
                                     />
                                 </div>
@@ -108,6 +118,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={css}
                                     />
                                 </div>
@@ -115,6 +126,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={git}
                                     />
                                 </div>
@@ -122,6 +134,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={github}
                                     />
                                 </div>
@@ -129,6 +142,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={socket}
                                     />
                                 </div>
@@ -136,6 +150,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Tech Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={maps}
                                     />
                                 </div>
@@ -153,6 +168,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Process Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={agile}
                                     />
                                 </div>
@@ -160,6 +176,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Process Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={waterfall}
                                     />
                                 </div>
@@ -167,6 +184,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Process Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={tdd}
                                     />
                                 </div>
@@ -174,6 +192,7 @@ export default class SkillsSection extends React.Component {
                                     <Image
                                         alt="Process Icon"
                                         loading="eager"
+                                        onLoadingComplete={this.props.increaseLoadedImages}
                                         src={bem}
                                     />
                                 </div>

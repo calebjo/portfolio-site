@@ -15,21 +15,33 @@ import ContactSection from './components/contact_section'
 
 export const Home = () => {
     
-    const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
+    const [loaderClass, setLoaderClass] = useState(`${styles.page__loader}`);
+    const [isLoaded, setIsLoaded] = useState(false);
     const [scrollRate, setScrollRate] = useState(`-500px -475px`);
-    const [pastTop, setPastTop] = useState(false)
+    const [pastTop, setPastTop] = useState(false);
+
+    const numLoaded = 0;
+    const increaseLoadedImages = () => {
+        // numLoaded = numLoaded + 1;
+        // console.log(numLoaded);
+        // if (numLoaded === 22) {
+        //     setIsLoaded(true);
+        // }
+    }
 
     useEffect(() => {
-        setLoaded(`${styles.page__loader} ${styles["fade-out"]}`);
-        setTimeout(() => {
-            setLoaded(`${styles.page__loader} ${styles.hidden}`);
-        }, 4000)
-
+        
+        // if (isLoaded) {
+            // console.log('isLoaded is true!')
+            setLoaderClass(`${styles.page__loader} ${styles["fade-out"]}`);
+            setTimeout(() => {
+                setLoaderClass(`${styles.page__loader} ${styles.hidden}`);
+            }, 4000)
+        // }
     }, []);
 
     const handleScroll = (e) => {
         const scrolled = e.target.scrollTop
-        console.log(scrolled)
         const rate = (scrolled * 0.125)
         setScrollRate(`-500px ${-475-rate}px`)
         if (scrolled === 0) {
@@ -61,7 +73,9 @@ export const Home = () => {
                                 className={styles.loader__image}
                                 priority="true"
                                 alt="Loader icon"
-                                loading="eager"
+                                onLoadingComplete={() => {
+                                    increaseLoadedImages()
+                                }}
                             />
                         </div>
                     </div>
@@ -78,23 +92,29 @@ export const Home = () => {
                             objectPosition={scrollRate}
                             priority="true"
                             alt="Banner image"
-                            loading="eager"
+                            onLoadingComplete={() => {
+                                increaseLoadedImages()
+                            }}
                         />
                     </div>
                     <TopNav 
                         pastTop={pastTop}/>
                     <SideNav />
                     <section className={styles.home}>
-                        <HomeSection />
+                        <HomeSection 
+                            increaseLoadedImages={increaseLoadedImages}/>
                     </section>
                     <section className={styles.skills} id="skills">
-                        <SkillsSection />
+                        <SkillsSection 
+                            increaseLoadedImages={increaseLoadedImages}/>
                     </section>
                     <section className={styles.projects} id="projects">
-                        <ProjectsSection />
+                        <ProjectsSection 
+                            increaseLoadedImages={increaseLoadedImages}/>
                     </section>
                     <section id="contact">
-                        <ContactSection />
+                        <ContactSection 
+                            increaseLoadedImages={increaseLoadedImages}/>
                     </section>
                 </div>
             </div>
