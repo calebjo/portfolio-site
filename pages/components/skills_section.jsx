@@ -37,90 +37,105 @@ export default class SkillsSection extends React.Component {
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={react}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={redux}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={ruby}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={rails}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={psql}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={mongo}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={node}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={aws}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={express}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={html}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={css}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={git}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={github}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={socket}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Tech Icon"
+                                        loading="eager"
                                         src={maps}
                                     />
                                 </div>
@@ -137,24 +152,28 @@ export default class SkillsSection extends React.Component {
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Process Icon"
+                                        loading="eager"
                                         src={agile}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Process Icon"
+                                        loading="eager"
                                         src={waterfall}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Process Icon"
+                                        loading="eager"
                                         src={tdd}
                                     />
                                 </div>
                                 <div className="skills__list-item">
                                     <Image
                                         alt="Process Icon"
+                                        loading="eager"
                                         src={bem}
                                     />
                                 </div>

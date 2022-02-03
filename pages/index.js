@@ -61,6 +61,7 @@ export const Home = () => {
                                 className={styles.loader__image}
                                 priority="true"
                                 alt="Loader icon"
+                                loading="eager"
                             />
                         </div>
                     </div>
@@ -77,6 +78,7 @@ export const Home = () => {
                             objectPosition={scrollRate}
                             priority="true"
                             alt="Banner image"
+                            loading="eager"
                         />
                         {/* SKELETON -- FIX BACKGROUND IMAGE POSITIONING LATER */}
                     </div>
