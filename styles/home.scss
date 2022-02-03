@@ -125,7 +125,7 @@
 }
 
 .home__continue {
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .guide__container {
@@ -137,9 +137,9 @@
     position: absolute;
     bottom: 0;
     .guide__ball {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 4rem;
+        width: 4vh;
+        height: 4vh;
+        border-radius: 4vh;
         background: #ffa24f;
     }
     .guide__line {
