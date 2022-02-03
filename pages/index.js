@@ -16,7 +16,7 @@ import ContactSection from './components/contact_section'
 export const Home = () => {
     
     const [loaderClass, setLoaded] = useState(`${styles.page__loader}`);
-    const [scrollRate, setScrollRate] = useState(`50% 0`);
+    const [scrollRate, setScrollRate] = useState(`-500px -475px`);
     const [pastTop, setPastTop] = useState(false)
 
     useEffect(() => {
@@ -30,8 +30,8 @@ export const Home = () => {
     const handleScroll = (e) => {
         const scrolled = e.target.scrollTop
         console.log(scrolled)
-        const rate = scrolled * 0.125
-        setScrollRate(`50% ${-rate}px`)
+        const rate = (scrolled * 0.125)
+        setScrollRate(`-500px ${-475-rate}px`)
         if (scrolled === 0) {
             setPastTop(false)
         } else {
@@ -69,18 +69,17 @@ export const Home = () => {
                 <div className={styles.pages} id="home">
                     <div 
                         className={styles.banner}
-                        style={{height: '100%'}}
                         >
                         <Image
                             src={banner}
-                            layout="fill"
-                            objectFit='cover'
+                            layout="fixed"
+                            objectFit="none"
+                            className="banner-image"
                             objectPosition={scrollRate}
                             priority="true"
                             alt="Banner image"
                             loading="eager"
                         />
-                        {/* SKELETON -- FIX BACKGROUND IMAGE POSITIONING LATER */}
                     </div>
                     <TopNav 
                         pastTop={pastTop}/>
