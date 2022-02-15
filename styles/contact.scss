@@ -10,7 +10,7 @@
     clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
     z-index: 1;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     background-clip: padding-box;
     outline: 2px transparent;
     box-shadow: 2px 2px 18px rgba(46, 54, 68, 0.25);
@@ -50,7 +50,7 @@
                 width: 90%;
                 height: 4rem;
                 background: rgba(255, 255, 255, 0.125);
-                backdrop-filter: blur(6px);
+                backdrop-filter: blur(8px);
                 border: 1px solid rgba(255, 255, 255, 0.4);
                 border: solid 2px transparent;
                 background-clip: padding-box;
