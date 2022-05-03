@@ -1,3 +1,4 @@
+
 .skills__container {
     display: flex;
     justify-content: center;
@@ -125,6 +126,13 @@
 
 .skills__right .skills__line-box {
     top: -20%;
+}
+
+.center-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #FFA24F;
 }
 
 @media (min-width: 519px) {

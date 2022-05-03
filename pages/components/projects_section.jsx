@@ -8,6 +8,7 @@ export default class ProjectsSection extends React.Component {
     render() {
         return(
             <div className="projects__container">
+                <div className="center-line"/>
                 <div className="projects__header">
                     Projects
                 </div>
@@ -83,6 +84,7 @@ export default class ProjectsSection extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="end-ball" />
             </div>
         )
     }

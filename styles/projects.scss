@@ -120,6 +120,15 @@
     padding: 0.5rem 0;
 }
 
+.end-ball {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background: #FFA24F;
+    border-radius: 30px;
+}
+
 // ------------------------
 
 @media (min-width: 750px) {
